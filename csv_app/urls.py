@@ -18,6 +18,6 @@ from django.contrib import admin
 from django.urls import path
 from csv_app import views
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('custom_admin/', admin.site.urls),
     path('upload_csv/',views.Csv_view)
 ]
