@@ -19,5 +19,6 @@ from django.urls import path
 from csv_app import views
 urlpatterns = [
     path('custom_admin/', admin.site.urls),
-    path('upload_csv/',views.Csv_view)
+    path('upload_csv/',views.Csv_view),
+    path('subscribe/',views.subscribe_email_to_sns)
 ]
