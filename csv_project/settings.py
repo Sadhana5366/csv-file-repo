@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'csv_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME':'rds_database',
+        'NAME':'mysql_db',
         'USER':'admin',
         'PASSWORD':'admin123',
-        'HOST':'rds-db-instance.c1wmo8cq608l.ap-south-1.rds.amazonaws.com',
+        'HOST':'rds-database.c1wmo8cq608l.ap-south-1.rds.amazonaws.com',
         'PORT':'3306'
 
 
