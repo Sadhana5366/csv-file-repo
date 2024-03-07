@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'mysql_db',
         'USER':'admin',
-        'PASSWORD':'admin123',
-        'HOST':'rds-database.c1wmo8cq608l.ap-south-1.rds.amazonaws.com',
+        'PASSWORD':'admin2024',
+        'HOST':'rds-csv-database.crugea0sujs8.ap-south-1.rds.amazonaws.com',
         'PORT':'3306'
 
 
