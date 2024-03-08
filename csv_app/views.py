@@ -34,11 +34,16 @@ def djngo_folder_csv_to_rds():
         for table_name, file_path in zip(table_names, csv_file_paths):
             # create data frame
             df = pd.read_csv(file_path)
-
-            # dump to sql
-            df.to_sql(table_name, index=False, con=connection)
-
-            print(f"{file_path} dumped in table {table_name} in mysql.")
+            
+            try:
+                
+         
+                # dump to sql
+                df.to_sql(table_name, index=False, con=connection)
+    
+                print(f"{file_path} dumped in table {table_name} in mysql.")
+            except:
+                pass
 
         for file in csv_file_paths:
             os.remove(file)
